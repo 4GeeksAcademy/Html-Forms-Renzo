@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>HTML Forms</title>
+</head>
+<body class="min-vh-100 d-flex flex-column justify-content-center">
+    <div class="container">
+        <div class="card">
+            <div class="card-header h1">
+              Payment for example
+            </div>
+            <div class="card-body">
+                <div class="alert alert-danger my-3" role="alert">
+                    Some fields are missing
+                </div>
+                <div class="row card-data my-3">
+                    <div class="col-5">
+                        <label for="card-number" class="form-label">Card #</label>
+                        <input type="email" class="form-control" id="card-number" aria-describedby="emailHelp" placeholder="XXXXXXXXXXXX">
+                    </div>
+                    <div class="col-3">
+                        <label for="card-cvc" class="form-label">CVC #</label>
+                        <input type="email" class="form-control" id="card-cvc" aria-describedby="emailHelp" placeholder="0000">
+                    </div>
+                    <div class="col-4">
+                        <label for="card-amount" class="form-label">Amount</label>
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            <input type="email" class="form-control" id="card-amount" aria-describedby="emailHelp" placeholder="Amount">
+                        </div>
+                    </div>
+                </div>
+                <div class="row card-name-client my-3">
+                    <div class="col-6">
+                        <label for="card-name" class="form-label">First name</label>
+                        <input type="email" class="form-control" id="card-name" aria-describedby="emailHelp">
+                    </div>
+                    <div class="col-6">
+                        <label for="card-lname" class="form-label">Last Name</label>
+                        <input type="email" class="form-control" id="card-lname" aria-describedby="emailHelp">
+                    </div>
+                </div>
+                <div class="row card-data-client my-3">
+                    <div class="col-6">
+                        <label for="card-city" class="form-label">City</label>
+                        <input type="email" class="form-control" id="card-city" aria-describedby="emailHelp">
+                    </div>
+                    <div class="col-3">
+                        <label for="card-state" class="form-state">State</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Pick a state</option>
+                            <option value="1">Florida</option>
+                            <option value="2">New York</option>
+                            <option value="3">Ohio</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <label for="card-pcode" class="form-pcode">Postal code</label>
+                        <input type="email" class="form-control" id="card-pcode" aria-describedby="emailHelp">
+                    </div>
+                </div>
+                <div class="row card-pay my-3">
+                    <div class="col-6">
+                        <label for="card-name" class="form-label">We accept</label>
+                        <div class="my-3 d-flex justify-content-start" >
+                            <div class="bg-secondary p-2 rounded-2">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <i class="fa-brands fa-cc-mastercard"></i>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <i class="fa-brands fa-cc-visa"></i>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                    <i class="fa-brands fa-cc-diners-club"></i>
+                                </div>
+                                <div class="form-check form-check-inline" style="margin-right: 0;">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                    <i class="fa-brands fa-cc-amex"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-6">
+                        <label for="card-lname" class="form-label">Message</label>
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px"></textarea>
+                        <p class="text-secondary" style="font-size: 0.9rem;">Add any notes here.</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="card-footer text-body-secondary d-flex justify-content-end">
+                <button type="button" class="btn btn-secondary me-3">Cancel</button>
+                <button type="button" class="btn btn-primary">Send</button>
+            </div>
+          </div>
+    </div>
+    <script src="https://kit.fontawesome.com/9317647987.js" crossorigin="anonymous"></script>
+</body>
+</html>
